@@ -1,0 +1,24 @@
+{
+  "name": "backend-api-express",
+  "version": "1.0.0",
+  "description": "API backend with Express, Prisma ORM anda Zod.",
+  "keywords": [
+    "api",
+    "express",
+    "prisma",
+    "zod",
+    "mvc",
+    "middlewares"
+  ],
+  "license": "ISC",
+  "author": "Rafael Kenji",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
