@@ -1,14 +1,13 @@
 import express from 'express'
-import {getUsersController} from '../controllers/user/getUserController.js'
+import {getUserController} from '../controllers/user/getUserController.js'
 import {createUserController} from '../controllers/user/createUserController.js'
 import {updateUserController} from '../controllers/user/updateUserController.js'
-import { updateAvatarUserController } from '../controllers/user/updateAvatarUserController.js'
-import { deleteUserController } from '../controllers/user/deleteUserController.js'
-
+import {updateAvatarUserController } from '../controllers/user/updateAvatarUserController.js'
+import {deleteUserController } from '../controllers/user/deleteUserController.js'
 
 const router = express.Router()
 
-router.get('/', getUsersController)
+router.get('/', getUserController)
 router.post('/', createUserController)
 router.put('/', updateUserController)
 router.patch('/', updateAvatarUserController)

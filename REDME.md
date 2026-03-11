@@ -8,3 +8,8 @@
 - Quais os métodos de requisição HTTP e para que serve cada um deles?
 - Para que serve o --watch ao rodar o servidor?
 - Para que serve o Router do Express?
+- O que é um padrão de projeto?
+- O que é o padrão de projeto MVC?
+- Qual a responsabilidade de cada Camada?
+- o que é ORM?
+- Quais as vantagens de utilizar ORM?
