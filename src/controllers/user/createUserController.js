@@ -1,5 +1,4 @@
-import e from 'express';
-import { createUser } from '../models/userModel.js';
+import { createUser } from '../../models/userModel.js';
 
 export  async function createUserController(req, res){
 
