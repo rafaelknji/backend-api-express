@@ -1,3 +1,5 @@
+# Tópicos Importantes
+
 - Qual a linguagem de programação utilizada para o nosso Backend?
 - O que é Node.js?
 - O que é NPM?
@@ -13,3 +15,23 @@
 - Qual a responsabilidade de cada Camada?
 - o que é ORM?
 - Quais as vantagens de utilizar ORM?
+- Como utilizar parâmetros de URL?
+- O que é Middlerare? (Exemplo Logger)
+
+# Comandos Prisma
+Instalação
+
+npm i prisma -D
+npm i dotenv para Mysql e Mariadb npm install @prisma/client @prisma/adapter-mariadb mariadb
+Inicia o Prisma
+
+npx prisma init --datasource-provider mysql --output ../generated/prisma
+Gera o banco de dados a partir do schema do prisma
+
+npx prisma db push
+Gera o schema do prisma a partir do banco de dados
+
+npx prisma db push
+Gerar as funções para interagir com os modelos mapeados no schema
+
+npx prisma generate
