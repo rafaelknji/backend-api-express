@@ -1,6 +1,6 @@
 import { getUsers } from "../../models/userModel.js"
 
-export async function getUserController(req, res){
+export async function getUsersController(req, res){
 
     const result = await getUsers()
 

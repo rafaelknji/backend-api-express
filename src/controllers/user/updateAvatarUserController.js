@@ -1,13 +1,22 @@
-import { updateUser } from "../../models/userModel.js";
+import { updateUser, validateUser } from "../../models/userModel.js";
 
-export async function updateAvatarUserController(req, res){
-    const {id} = req.params
-    const user = req.body
+export async function updateAvatarUsersController(req, res){
+        const {id} = req.params
+        const user = req.body
+    
+        const {success, error, data} = validateUser({id: +id, avatar: user.avatar}, {name: true, pass: true, email: true})
 
-    const result = await updateUser(user, +id)
+        if(!success){
+            return res.status(400).json({
+                message: "Erro de validação",
+                fieldErrors: error
+            })
+        }
 
-    return res.json({
-        message: "Avatar atualizado com sucesso!",
-        user: result
-    })
+        const result = await updateUser(data, data.id)
+    
+        return res.json({
+            message: "Avatar atualizado com sucesso!",
+            user: result
+        })
 }

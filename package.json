@@ -20,10 +20,11 @@
     "studio": "prisma studio"
   },
   "dependencies": {
-    "@prisma/adapter-mariadb": "^7.4.2",
+    "@prisma/adapter-mariadb": "^7.5.0",
     "@prisma/client": "^7.5.0",
     "express": "^5.2.1",
-    "mariadb": "^3.5.2"
+    "mariadb": "^3.5.2",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "dotenv": "^17.3.1",
